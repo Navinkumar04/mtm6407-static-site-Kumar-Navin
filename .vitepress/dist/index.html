@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navin's Portfolio</title>
+    <meta name="description" content="A website that displays my work in photography and graphic design" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preload" href="/assets/inter-roman-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Scripts -->
+    <script type="module" src="/assets/app.js"></script>
+
+    <!-- Dark Mode Check -->
+    <script>
+      (function () {
+        const theme = localStorage.getItem("vitepress-theme-appearance") || "auto";
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (theme === "dark" || (theme === "auto" && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+
+    <!-- Mac OS Class Toggle -->
+    <script>
+      document.documentElement.classList.toggle("mac", /Mac|iPhone|iPod|iPad/i.test(navigator.platform));
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="/">Navin's Portfolio</a></div>
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/photography.html">Photography</a></li>
+          <li><a href="/graphicdesign.html">Graphic Design</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Navin's Portfolio</h1>
+        <p>A collection of my work in photography and graphic design</p>
+        <p class="tagline">Bringing visions to life</p>
+        <div class="hero-buttons">
+          <a class="btn" href="/photography.html">Photography</a>
+          <a class="btn" href="/graphicdesign.html">Graphic Design</a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h2>Photography</h2>
+          <p>Showcasing my collection of photographs</p>
+        </div>
+        <div class="feature">
+          <h2>Graphic Design</h2>
+          <p>Various projects showcasing my graphic design skills</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Navin Kumar. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
