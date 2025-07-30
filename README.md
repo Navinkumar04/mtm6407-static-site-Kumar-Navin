@@ -1,6 +1,6 @@
 # mtm6407-static-site
 
-Jeffrey Alexandre Chery
-Student #: 41087395
+Navin kumar
+Student #: 90541138566
 Static Generator: VitePress
 
